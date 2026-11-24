@@ -21,5 +21,9 @@ writeFileSync('dist/negociation-revision.html', single);
 mkdirSync('docs', { recursive: true });
 for (const f of ['index.html', 'app.js', 'styles.css']) copyFileSync('dist/' + f, 'docs/' + f);
 writeFileSync('docs/.nojekyll', '');
+// Racine du dépôt : le site complet en un seul fichier, pour que GitHub Pages fonctionne aussi
+// avec le réglage « main / (root) » (sinon c'est le README qui s'affiche).
+copyFileSync('dist/negociation-revision.html', 'index.html');
+writeFileSync('.nojekyll', '');
 const kb = (f) => Math.round(readFileSync(f).length / 1024);
 console.log(`Build OK — app.js ${kb('dist/app.js')} Ko, styles.css ${kb('dist/styles.css')} Ko, fichier unique ${kb('dist/negociation-revision.html')} Ko`);

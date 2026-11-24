@@ -6,7 +6,7 @@ Le site est organisé comme un **plan de métro** : chaque séance est une ligne
 
 ## Accès
 
-- **GitHub Pages** : https://tomzerone.github.io/negociation-s5-site/ — une fois Pages activé (dépôt public, *Settings → Pages → Deploy from a branch → `main` / `/docs`*). La progression est gardée dans le navigateur ; la correction par Claude est remplacée par l’auto-évaluation guidée.
+- **GitHub Pages** : https://tomzerone.github.io/negociation-s5-site/ — fonctionne avec le réglage *Settings → Pages → Deploy from a branch → `main`*, que le dossier soit `/ (root)` (fichier `index.html` à la racine) ou `/docs`. La progression est gardée dans le navigateur ; la correction par Claude est remplacée par l’auto-évaluation guidée.
 - **Page claude.ai (artefact)** : https://claude.ai/artifact/CcUD3gzvXzPiDcv73Ahxur — privée par défaut ; progression synchronisée entre tes appareils et correction des réponses rédigées par Claude.
 - **Hors ligne** : ouvrir `dist/negociation-revision.html` (un seul fichier, tout inclus).
 - **Serveur local** : `npm install && npm run build && npm run serve`, puis http://localhost:8080.
@@ -36,7 +36,8 @@ src/app/       application (store.js = progression, data.js = indicateurs et rec
 src/styles.css styles ; src/index.html page
 scripts/       build.mjs (construction), check_content.mjs (cohérence du contenu), test_e2e.py (tests navigateur), shot.py (captures)
 dist/          site construit (index.html + app.js + styles.css, et version fichier unique)
-docs/          copie pour GitHub Pages
+docs/          copie pour GitHub Pages (dossier /docs)
+index.html     version fichier unique pour GitHub Pages (dossier racine)
 ```
 
 ## Maintenance
