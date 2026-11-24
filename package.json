@@ -1,0 +1,14 @@
+{
+  "name": "negociation-s5-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plateforme personnelle de révision — Négociation spécifique (BUT TC, parcours MDEE, S5)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check_content.mjs",
+    "serve": "npx --yes serve dist -l 8080",
+    "test": "python3 scripts/test_e2e.py"
+  },
+  "devDependencies": { "esbuild": "^0.24.0" }
+}
