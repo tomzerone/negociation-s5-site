@@ -1,5 +1,5 @@
 // Vérifie la cohérence du contenu : identifiants, réponses, barèmes, liens internes.  →  npm run check
-import { SEANCES, CORRESPONDANCES, CHECKS } from '../src/content/cours.js';
+import { SEANCES, CORRESPONDANCES } from '../src/content/cours.js';
 import { FICHES, LEXIQUE } from '../src/content/fiches.js';
 import { FLASHCARDS } from '../src/content/flashcards.js';
 import { QCM } from '../src/content/qcm.js';
@@ -83,11 +83,10 @@ const ROUTES = {
   fiches: (p) => !p || FICHES[p] || ['transversale', 'lexique'].includes(p), flashcards: (p) => !p || TAGS.has(p) || ['all', 'review', 'due', 'new'].includes(p),
   qcm: (p) => !p || TAGS.has(p), questions: (p) => !p || QUESTIONS.some((q) => q.id === p), methode: (p) => !p, exercices: (p) => !p || EXERCICES.some((x) => x.id === p),
   simulateur: (p) => !p || SIMS.some((s) => s.id === p), cas: (p) => !p || CAS.some((c) => c.id === p), examens: (p) => !p, examen: (p) => EXAMS.some((e) => e.id === p),
-  revision: () => true, verifier: () => true, reglages: () => true, recherche: () => true,
+  revision: () => true, reglages: () => true, recherche: () => true,
 };
-const all = JSON.stringify({ SEANCES, FICHES, METHODE, EXERCICES, SIMS, CAS, EXAMS, QUESTIONS, CHECKS });
+const all = JSON.stringify({ SEANCES, FICHES, METHODE, EXERCICES, SIMS, CAS, EXAMS, QUESTIONS });
 const links = new Set([...all.matchAll(/href=\\"#([a-z0-9-]+)\\"/g)].map((m) => m[1]));
-CHECKS.forEach((c) => c.link && links.add(c.link));
 links.forEach((h) => { const i = h.indexOf('-'); const name = i < 0 ? h : h.slice(0, i); const param = i < 0 ? '' : h.slice(i + 1); if (!ROUTES[name] || !ROUTES[name](param)) err(`Lien interne cassé : #${h}`); });
 
 // Calculs du cas MarketOne

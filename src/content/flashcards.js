@@ -11,7 +11,7 @@ const S1 = [
   ['Étapes d’une négociation ponctuelle ?', 'Prise de contact → échanges → accord → contractualisation.'],
   ['Étapes d’un processus formalisé ?', 'Préparation → candidature/réponse → sélection → négociation → décision → contractualisation. Le négociateur ne maîtrise pas nécessairement toutes les étapes.'],
   ['Trois configurations d’acteurs du cours ?', 'Individuelle (1 vendeur ↔ 1 acheteur) ; comité / multi-acteurs (1 vendeur ↔ comité d’achat) ; mise en concurrence (plusieurs vendeurs ↔ 1 acheteur).'],
-  ['Que faut-il identifier dans une négociation multi-acteurs ?', 'Qui participe ? Qui décide ? Quels sont les rôles ? (et, d’après tes notes, qui influence). Distinguer utilisateurs, prescripteurs, acheteurs, influenceurs, décideurs.'],
+  ['Que faut-il identifier dans une négociation multi-acteurs ?', 'Qui participe ? Qui décide ? Quels sont les rôles ? (et, d’après les notes de cours, qui influence). Distinguer utilisateurs, prescripteurs, acheteurs, influenceurs, décideurs.'],
   ['Information équilibrée : les parties savent-elles la même chose ?', 'Non : elles disposent d’informations <strong>assez proches</strong> sur les principaux éléments, sans savoir exactement la même chose.'],
   ['Donne deux exemples d’information asymétrique.', 'Le <strong>budget maximal de l’acheteur</strong> ; le <strong>coût de revient et la marge minimale du vendeur</strong>.'],
   ['Quelle est la question clé de la dimension « information » ?', '« Qui sait quoi ? »'],
@@ -29,7 +29,7 @@ const S1 = [
   ['Activité du cours : un client doit remplacer une machine en panne sous 48 heures. Type ?', 'Négociation <strong>sous contrainte</strong> : une contrainte forte (délai) influence la négociation.'],
   ['Activité du cours : un commercial présente son offre à l’acheteur, au financier et au technique. Type ?', '<strong>Comité d’achat</strong> (multi-acteurs) : plusieurs interlocuteurs dans la décision.'],
   ['Consigne de l’activité pour identifier un type de négociation ?', 'Ne pas chercher uniquement un mot-clé : s’appuyer sur les <strong>caractéristiques de la situation</strong> (relever un indice).'],
-  ['Format de l’évaluation annoncé (d’après tes notes) ?', 'Question factuelle, avec une réponse qui commence par l’<strong>analyse de la situation</strong> puis <strong>comment on résoudrait le problème</strong> (à confirmer).'],
+  ['Format de l’évaluation annoncé en cours ?', 'Question factuelle, avec une réponse qui commence par l’<strong>analyse de la situation</strong> puis <strong>comment on résoudrait le problème</strong>.'],
 ];
 const S2 = [
   ['Définis l’appel d’offres.', 'Procédure par laquelle un acheteur <strong>met plusieurs fournisseurs en concurrence</strong> afin de satisfaire un <strong>besoin défini</strong>.'],

@@ -79,12 +79,12 @@ export function icon(name, cls = '') {
 }
 
 // ───────── Rendu des blocs du cours
-// Blocs « Cours » : contenu tiré des supports et de tes notes. Blocs « Plateforme » : explications et applications ajoutées pour t'aider.
+// Blocs « Cours » : contenu tiré des supports et des notes de cours. Blocs « Plateforme » : explications et applications ajoutées pour t'aider.
 const COURSE = {
   def: 'Définition', ex: 'Exemple du cours', key: 'À retenir', q: 'Question clé du cours', dist: 'Distinction',
-  warn: 'Point de vigilance', note: 'Tes notes de cours',
+  warn: 'Point de vigilance', note: 'Notes de cours',
 };
-const PLAT = { expl: 'Pour comprendre', app: 'Application', trap: 'Piège au contrôle', check: 'Point à vérifier' };
+const PLAT = { expl: 'Pour comprendre', app: 'Application', trap: 'Piège au contrôle' };
 
 export function renderBlocks(blocks, ctx = {}) {
   return blocks.map((b, i) => {
@@ -108,7 +108,7 @@ export function renderBlocks(blocks, ctx = {}) {
         return `<aside class="box c ${t}"${id}><div class="box-l"><span class="tag">Cours</span>${COURSE[t]}</div><div class="box-b">${b[1]}</div></aside>`;
       case 'expl': case 'app':
         return `<aside class="box pf ${t}"${id}><div class="box-l"><span class="tag">Plateforme</span>${PLAT[t]}</div>${b[1] ? `<div class="box-t">${b[1]}</div>` : ''}<div class="box-b">${b[2]}</div></aside>`;
-      case 'trap': case 'check':
+      case 'trap':
         return `<aside class="box pf ${t}"${id}><div class="box-l"><span class="tag">Plateforme</span>${PLAT[t]}</div><div class="box-b">${b[1]}</div></aside>`;
       case 'link': return `<p class="train-l"${id}>${icon('puzzle')}<span>${b[1]}</span></p>`;
       default: return '';
@@ -120,7 +120,7 @@ export function table(head, rows, idAttr = '') {
 }
 export function blockText(b) {
   const t = b[0];
-  if (['p', 'h', 'warn', 'note', 'trap', 'check', 'link'].includes(t)) return strip(b[1]);
+  if (['p', 'h', 'warn', 'note', 'trap', 'link'].includes(t)) return strip(b[1]);
   if (t === 'q') return strip(b[1]) + (b[2] ? ' ' + strip(b[2]) : '');
   if (['ul', 'ol', 'key'].includes(t)) return b[1].map(strip).join(' ');
   if (t === 'flow') return b[1].map(strip).join(' → ');

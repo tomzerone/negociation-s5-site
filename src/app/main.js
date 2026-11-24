@@ -35,9 +35,9 @@ const TABS = ['accueil', 'cours', 'flashcards', 'cas'];
 const ROUTES = {
   accueil: [Home], cours: [Cours], fiches: [Fiches], flashcards: [Cards], qcm: [Qcm], questions: [Questions],
   methode: [Methode], exercices: [Exos], simulateur: [Sim], cas: [Cas], examens: [Exams], examen: [Exams, 'run'],
-  revision: [Misc, 'revision'], verifier: [Misc, 'verifier'], reglages: [Misc, 'reglages'], recherche: [Misc, 'recherche'],
+  revision: [Misc, 'revision'], reglages: [Misc, 'reglages'], recherche: [Misc, 'recherche'],
 };
-const NAV_OF = { examen: 'examens', verifier: 'verifier', recherche: 'recherche', reglages: 'reglages' };
+const NAV_OF = { examen: 'examens', recherche: 'recherche', reglages: 'reglages' };
 
 let current = null;
 export function go(hash) { if (location.hash.slice(1) === hash) route(); else location.hash = hash; }
@@ -86,7 +86,6 @@ function shell() {
     <form class="side-search" id="side-search" role="search"><label class="sr" for="q-side">Rechercher</label>${icon('search')}<input id="q-side" type="search" placeholder="Rechercher une notion…" autocomplete="off"></form>
     <nav class="nav">${nav}</nav>
     <div class="side-foot">
-      <a href="#verifier" class="nav-i small" data-nav="verifier">${icon('alert')}<span>Points à vérifier</span></a>
       <a href="#reglages" class="nav-i small" data-nav="reglages">${icon('device')}<span>Réglages et sauvegarde</span></a>
       <div class="sync" id="sync">${icon('device')}<span>${esc(sync.status)}</span></div>
     </div>

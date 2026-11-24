@@ -26,7 +26,7 @@ def serve():
 
 ROUTES = ['accueil', 'cours', 'cours-s1', 'cours-s2-gonogo', 'cours-s3', 'cours-s4-cadre', 'fiches', 'fiches-s2', 'fiches-transversale', 'fiches-lexique', 'fiches-cas',
           'flashcards', 'flashcards-s4', 'qcm', 'questions', 'questions-qc-s1-01', 'exercices', 'exercices-calculs', 'exercices-dimensions', 'exercices-ordre',
-          'simulateur', 'simulateur-agent', 'methode', 'cas', 'cas-velos', 'cas-handball', 'examens', 'examen-ex2', 'revision', 'verifier', 'reglages', 'recherche']
+          'simulateur', 'simulateur-agent', 'methode', 'cas', 'cas-velos', 'cas-handball', 'examens', 'examen-ex2', 'revision', 'reglages', 'recherche']
 
 def run(base, mobile):
     with sync_playwright() as p:

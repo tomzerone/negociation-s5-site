@@ -1,5 +1,5 @@
 import { state, save, logSession, sync, exportJSON, importJSON, resetAll } from '../store.js';
-import { SEANCES, SE, CHECKS, FLASHCARDS, QCM, QUESTIONS, EXERCICES, CAS, seanceStats, weakSeances, search, snippet, highlight, isToReview, isDue, seLabel } from '../data.js';
+import { SEANCES, SE, FLASHCARDS, QCM, QUESTIONS, EXERCICES, CAS, seanceStats, weakSeances, search, snippet, highlight, isToReview, isDue, seLabel } from '../data.js';
 import { esc, icon, roundel, pct, toast, confirmDialog, copyText, $, fr } from '../ui.js';
 import { setTheme } from '../main.js';
 
@@ -39,14 +39,6 @@ const revision = {
   mount(root) {
     logSession('revision', 'Révision ciblée');
     root.addEventListener('click', (e) => { const b = e.target.closest('[data-pick]'); if (b) { pick = b.dataset.pick; root.innerHTML = fr(revision.render().html); } });
-  },
-};
-
-// ───────── Points à vérifier
-const verifier = {
-  render() {
-    return { html: `<header class="page-h"><h1>Points à vérifier</h1><p class="lead">La plateforme suit fidèlement tes supports. Quand ils sont incomplets, se contredisent ou quand elle ajoute quelque chose, elle le signale ici plutôt que de corriger en silence.</p></header>
-    <ol class="checks">${CHECKS.map((c) => `<li><div><h2>${esc(c.title)}</h2><p>${esc(c.text)}</p>${c.link ? `<a href="#${c.link}" class="small">Voir dans la plateforme</a>` : ''}</div></li>`).join('')}</ol>`, title: 'Points à vérifier' };
   },
 };
 
@@ -118,4 +110,4 @@ const reglages = {
   },
 };
 
-export const views = { revision, verifier, reglages, recherche };
+export const views = { revision, reglages, recherche };

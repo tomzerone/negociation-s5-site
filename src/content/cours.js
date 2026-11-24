@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// COURS — contenu tiré des 4 supports (diapositives) et des compléments de tes notes.
+// COURS — contenu tiré des 4 supports (diapositives) et des compléments des notes de cours.
 // Format d'un bloc : ['p', html] ['h', titre] ['ul', [..]] ['ol', [..]] ['table', [entêtes], [[ligne]]]
 //   Blocs « Cours »      : ['def', terme, html] ['ex', titre, html] ['dist', titre, html] ['key', [..]]
 //                          ['q', question, html?] ['warn', html] ['note', html] ['flow', [étapes], légende?] ['cols', [[titre, html]]]
-//   Blocs « Plateforme » : ['expl', titre, html] ['app', titre, html] ['trap', html] ['check', html] ['link', html]
+//   Blocs « Plateforme » : ['expl', titre, html] ['app', titre, html] ['trap', html] ['link', html]
 // Chaque section indique ses diapositives sources (src) et un libellé court de « station » (station).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -13,7 +13,7 @@ export const SEANCES = [
     id: 's1', num: 1, color: 'l1',
     title: 'Entrer dans les négociations spécifiques',
     short: 'Négociations spécifiques',
-    src: 'Cours 1 — 27 diapositives (MDEE, 2 h 30) + compléments de tes notes',
+    src: 'Cours 1 — 27 diapositives (MDEE, 2 h 30) + compléments des notes de cours',
     lead: 'La séance fondatrice : avant de négocier, on identifie le cadre. Elle te donne les quatre dimensions pour caractériser un contexte, les cinq contextes spécifiques et la grille d’analyse en 9 questions que tu réutiliseras partout.',
     question: '« Dans quel contexte suis-je en train de négocier ? »',
     objectifs: [
@@ -71,7 +71,7 @@ export const SEANCES = [
             ['Comité / multi-acteurs', '1 vendeur ↔ comité d’achat', 'Plusieurs interlocuteurs peuvent avoir des rôles et attentes différents.'],
             ['Mise en concurrence', 'Plusieurs vendeurs ↔ 1 acheteur', 'Plusieurs fournisseurs sont en concurrence.'],
           ]],
-          ['q', 'À identifier : « Qui participe ? Qui décide ? Quels sont les rôles ? »', '<p>Tes notes ajoutent : il faut identifier qui participe, <strong>qui influence</strong> et qui décide.</p>'],
+          ['q', 'À identifier : « Qui participe ? Qui décide ? Quels sont les rôles ? »', '<p>Les notes de cours ajoutent : il faut identifier qui participe, <strong>qui influence</strong> et qui décide.</p>'],
           ['h', 'D. Information : relativement équilibrée ↔ asymétrique'],
           ['cols', [
             ['Information relativement équilibrée', '<p>Les parties disposent d’informations <strong>assez proches</strong> sur les principaux éléments de la négociation.</p><p>Cela ne signifie pas qu’elles savent exactement la même chose.</p>'],
@@ -164,7 +164,7 @@ export const SEANCES = [
             'La première étape du négociateur est d’<strong>analyser la situation avant de choisir sa manière de négocier</strong>.',
             'La question de départ : <strong>« Dans quel contexte suis-je en train de négocier ? »</strong>',
           ]],
-          ['note', '<strong>Évaluation annoncée</strong> : question factuelle, avec une réponse qui commence par <strong>l’analyse de la situation</strong> et la question de savoir <strong>comment on résoudrait le problème</strong>. À confirmer avec les consignes définitives du contrôle.'],
+          ['note', '<strong>Évaluation annoncée</strong> : question factuelle, avec une réponse qui commence par <strong>l’analyse de la situation</strong> et la question de savoir <strong>comment on résoudrait le problème</strong>.'],
           ['expl', 'Ce que cela implique pour ta façon de répondre', 'Même pour une question de cours, ne te contente pas de réciter : commence par situer le contexte (quelles dimensions, quel type de négociation, quels indices), puis explique comment tu agirais. La page <a href="#methode">Méthode</a> détaille cette structure de réponse.'],
         ],
       },
@@ -176,7 +176,7 @@ export const SEANCES = [
     id: 's2', num: 2, color: 'l2',
     title: 'Les appels d’offres : analyser, décider et préparer la négociation',
     short: 'Appels d’offres',
-    src: 'Cours 2 — 29 diapositives (TC 3, séance 2) + compléments de tes notes',
+    src: 'Cours 2 — 29 diapositives (TC 3, séance 2) + compléments des notes de cours',
     lead: 'Comment un commercial transforme une consultation en décision, puis en stratégie de réponse. Une démarche en cinq étapes, du « Go / No-Go » à la préparation d’une négociation… quand elle est autorisée.',
     question: '« Que peut-elle réellement modifier dans son offre ? »',
     objectifs: [
@@ -309,7 +309,6 @@ export const SEANCES = [
           ['p', 'Avant de proposer un prix, l’entreprise doit connaître :'],
           ['ul', ['son <strong>coût de revient</strong> ;', 'sa <strong>marge minimale</strong> ;', 'son <strong>prix cible</strong> ;', 'son <strong>prix maximal acceptable pour l’acheteur</strong> ;', 'les <strong>coûts liés aux éventuelles concessions</strong>.']],
           ['p', '<strong>Le prix proposé doit intégrer les risques du marché.</strong> Par exemple, un délai d’intervention très court peut nécessiter : du personnel d’astreinte ; des stocks disponibles ; des véhicules supplémentaires ; une organisation spécifique. <strong>Ces coûts doivent être pris en compte dans la proposition.</strong>'],
-          ['check', 'Tes notes formulent cette liste un peu différemment : « coût de revient, marge minimale, <em>stock</em> et <em>prix souhaité</em> ». La plateforme suit la diapositive (liste ci-dessus), plus complète. Au contrôle, cite la version de la diapositive ; tu peux ajouter le stock si la situation s’y prête. Par ailleurs, la diapositive est numérotée « 3. » alors qu’elle appartient à la partie 4 : elle est présentée ici comme le point 4.3.'],
           ['expl', 'Relier les notions de prix', 'Coût de revient + marge minimale donnent le <strong>plancher</strong> en dessous duquel l’offre n’est plus viable ; le prix maximal acceptable pour l’acheteur donne le <strong>plafond</strong> ; le prix cible se situe entre les deux. Chaque concession a un coût qu’il faut avoir chiffré <em>avant</em> la négociation, sinon on risque de franchir le plancher sans s’en rendre compte.'],
         ],
       },
@@ -361,7 +360,7 @@ export const SEANCES = [
     id: 's3', num: 3, color: 'l3',
     title: 'Le référencement en grande distribution',
     short: 'Référencement',
-    src: 'Cours 3 — 16 diapositives + compléments de tes notes',
+    src: 'Cours 3 — 16 diapositives + compléments des notes de cours',
     lead: 'Entrer dans l’assortiment d’une enseigne : un rapport de force qui dépend de la dépendance et des alternatives, des variables bien au-delà du prix, et un accord qu’il faudra ensuite exécuter.',
     question: '« Qui dépend le plus de l’autre ? »',
     objectifs: [
@@ -486,7 +485,7 @@ export const SEANCES = [
     id: 's4', num: 4, color: 'l4',
     title: 'L’agent sportif : négocier pour son client',
     short: 'Agent sportif',
-    src: 'Cours 4 — 22 diapositives (Négociation spécifique TC MDEE & BDMRC). Pas de notes personnelles pour cette séance.',
+    src: 'Cours 4 — 22 diapositives (Négociation spécifique TC MDEE & BDMRC)',
     lead: 'Négocier pour le compte d’un tiers, dans deux relations successives : obtenir le mandat, puis le valoriser auprès d’un club, d’un sponsor ou d’un partenaire. La méthode reste la même ; la difficulté augmente.',
     question: '« Cette concession est-elle réellement dans l’intérêt de mon client ? »',
     objectifs: [
@@ -509,7 +508,6 @@ export const SEANCES = [
           ]],
           ['p', 'L’agent doit donc être capable de passer d’une <strong>logique de vente de ses services</strong> à une <strong>logique de représentation et de négociation pour le compte d’un tiers</strong>.'],
           ['q', '« L’agent ne négocie pas seulement une opportunité : il négocie au nom et dans l’intérêt de son mandant. »'],
-          ['check', 'Dans le PDF, la phrase de la diapositive 3 est coupée : « L’agent sportif est un intermédiaire et un re[…] ». La suite du support (rôle « intermédiaire → représentant », diapositive 19) indique qu’il s’agit très probablement de « représentant ». Vérifie sur le diaporama original si tu l’as.'],
           ['expl', 'Le vocabulaire à employer', 'Le <strong>mandant</strong> est la personne qui confie sa représentation (le sportif) ; le <strong>mandat</strong> est la mission confiée à l’agent ; l’agent est le <strong>mandataire</strong> (ce dernier terme n’est pas dans le support, mais il désigne celui qui reçoit le mandat).'],
         ],
       },
@@ -693,18 +691,4 @@ export const CORRESPONDANCES = [
     id: 'objectifs', label: 'Objectifs et limites', stations: [['s2', 'preparer'], ['s3', 'preparer'], ['s4', 'concessions']],
     text: 'Objectif idéal, cible réaliste, seuil minimal acceptable (séance 2) ; objectifs, priorités et limites (séance 3) ; objectifs, priorités, limites du sportif, ce qu’il peut concéder et ce qu’il exige en retour (séance 4).',
   },
-];
-
-// Points de fidélité signalés par la plateforme
-export const CHECKS = [
-  { title: 'Séance 2 — Ce qu’il faut connaître avant de proposer un prix', text: 'La diapositive 25 cite : coût de revient, marge minimale, prix cible, prix maximal acceptable pour l’acheteur, coûts liés aux concessions. Tes notes citent : coût de revient, marge minimale, stock et prix souhaité. La plateforme suit la diapositive ; cite-la au contrôle.', link: 'cours-s2-offre' },
-  { title: 'Séance 2 — Numérotation de la diapositive 25', text: 'Titrée « 3. Construire une offre économiquement viable » alors qu’elle se trouve dans la partie 4 (Construire une offre) : elle est présentée comme le point 4.3.', link: 'cours-s2-offre' },
-  { title: 'Séance 2 — « Niveau de service » ou « niveau de suivi »', text: 'La diapositive 21 liste « le niveau de service » et « l’organisation du suivi » parmi les variables ; tes notes écrivent « niveau de suivi ». Les deux idées sont gardées.', link: 'cours-s2-marges' },
-  { title: 'Séance 3 — Pas de diapositive « Objectifs »', text: 'Les objectifs affichés pour la séance 3 sont reconstitués par la plateforme à partir de la diapositive « À retenir ».', link: 'cours-s3' },
-  { title: 'Séance 4 — Phrase coupée (diapositive 3)', text: '« L’agent sportif est un intermédiaire et un re[…] » : la fin manque dans le PDF. La diapositive 19 (« intermédiaire → représentant ») suggère « représentant ».', link: 'cours-s4-roles' },
-  { title: 'Séance 4 — Cadre légal', text: 'Le support indique « depuis le 5 août 2026 » : durée du contrat d’agent ≤ 3 ans, rémunération ≤ 10 % (plafond inférieur possible fixé par les fédérations délégataires). Tes notes recommandent de retenir les chiffres et la formulation exacts du support.', link: 'cours-s4-cadre' },
-  { title: 'Séance 4 — Pas de notes personnelles', text: 'Tu n’as pas pris de notes pour cette séance : tout le contenu vient des 22 diapositives.', link: 'cours-s4' },
-  { title: 'Séance 1 — Format du contrôle', text: 'Tes notes indiquent : « question factuelle, avec une réponse qui commence par l’analyse de la situation et la question de savoir comment on résoudrait le problème. À confirmer avec les consignes définitives du contrôle. »', link: 'cours-s1-retenir' },
-  { title: 'Cas MarketOne / TempoRun — Annexe MarketOne simulée', text: 'Le dossier précise que l’annexe confidentielle MarketOne (camp A) n’a pas été fournie dans les photos : c’est une simulation pédagogique cohérente avec le dossier commun, à ne pas présenter comme le document réel du professeur.', link: 'cas-marketone' },
-  { title: 'Ajouts de la plateforme', text: 'Les encadrés marqués « Plateforme » (Pour comprendre, Application, Piège au contrôle) sont des explications et illustrations ajoutées pour t’aider ; les chiffres qui y figurent (ex. coût de revient de 6 € dans l’exemple 10 € → 9 €, notes pondérées A/B) sont des hypothèses. Les cas pratiques autres que MarketOne / TempoRun et les sujets de contrôle blancs sont des entraînements inventés pour la plateforme.', link: 'cours' },
 ];

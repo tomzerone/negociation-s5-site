@@ -2,7 +2,7 @@ import { state, save, logSession } from '../store.js';
 import { SEANCES, CORRESPONDANCES, SE, seanceStats } from '../data.js';
 import { esc, icon, renderBlocks, roundel, bar, toast, $, $$ } from '../ui.js';
 
-const LEGEND = `<div class="legend"><span><span class="tag">Cours</span> contenu de tes supports et de tes notes</span><span><span class="tag pfx">Plateforme</span> explication, application ou conseil ajouté pour t’aider</span></div>`;
+const LEGEND = `<div class="legend"><span><span class="tag">Cours</span> contenu des supports et des notes de cours</span><span><span class="tag pfx">Plateforme</span> explication, application ou conseil ajouté pour t’aider</span></div>`;
 
 function list() {
   const cards = SEANCES.map((s) => {

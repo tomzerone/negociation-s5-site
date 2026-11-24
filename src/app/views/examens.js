@@ -9,7 +9,7 @@ const fmtPts = (x) => (Math.round(x * 100) / 100).toLocaleString('fr-FR');
 
 function list() {
   return `<header class="page-h"><h1>Contrôles blancs</h1><p class="lead">Trois sujets complets, comme au contrôle annoncé : des <strong>questions de cours</strong> puis un <strong>cas pratique écrit</strong> avec analyse et argumentation. Chronomètre, copie rédigée, puis correction argumentée avec un barème indicatif sur 20.</p></header>
-  <div class="note">${icon('info')}<p>Le format exact et la durée du contrôle ne sont pas encore confirmés (tes notes l’indiquent). Ces sujets sont des entraînements inventés pour la plateforme : leurs barèmes ne sont pas ceux de ton professeur.</p></div>
+  <div class="note">${icon('info')}<p>Ces sujets sont des entraînements inventés pour la plateforme : leurs barèmes ne sont pas ceux de ton professeur.</p></div>
   <div class="ex-list">${EXAMS.map((ex) => {
     const runs = state.exams.filter((r) => r.id === ex.id);
     const draft = state.examDrafts[ex.id];

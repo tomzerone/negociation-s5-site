@@ -266,7 +266,6 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .box.dist { border-left-color: var(--mid); }
 .box.pf { border-style: dashed; border-color: var(--line-2); background: transparent; }
 .box.trap { border-color: var(--ko); }
-.box.check { border-color: var(--mid); }
 .train-l { display: flex; gap: 8px; align-items: flex-start; font-size: .93rem; color: var(--ink-2); background: var(--sunk); padding: 10px 14px; border-radius: var(--r-m); }
 .train-l .ic { color: var(--ink-3); margin-top: 2px; }
 .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: .86rem; color: var(--ink-2); margin: 0 0 24px; align-items: center; }
@@ -666,11 +665,6 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .results strong { font-weight: 800; }
 .results span { color: var(--ink-2); font-size: .93rem; }
 .results .kind { font-size: .76rem; color: var(--ink-3); font-weight: 700; }
-.checks { list-style: none; padding: 0; max-width: 800px; margin: 0; counter-reset: c; }
-.checks li { counter-increment: c; display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); margin: 0; }
-.checks li::before { content: counter(c); display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--mid-soft); color: var(--mid-ink); font-weight: 800; }
-.checks h2 { font-size: 1.02rem; margin-bottom: .3em; }
-.checks p { margin: 0 0 .4em; color: var(--ink-2); }
 .form-row { display: grid; gap: 6px; margin-bottom: 16px; max-width: 520px; }
 .form-row label { font-weight: 700; }
 .copybox { width: 100%; min-height: 120px; font: .82rem/1.4 ui-monospace, Menlo, Consolas, monospace; }

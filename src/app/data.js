@@ -1,4 +1,4 @@
-import { SEANCES, CORRESPONDANCES, CHECKS } from '../content/cours.js';
+import { SEANCES, CORRESPONDANCES } from '../content/cours.js';
 import { FICHES, TRANSVERSALE, LEXIQUE } from '../content/fiches.js';
 import { FLASHCARDS } from '../content/flashcards.js';
 import { QCM } from '../content/qcm.js';
@@ -11,7 +11,7 @@ import { EXAMS } from '../content/examens.js';
 import { blockText, strip } from './ui.js';
 import { state } from './store.js';
 
-export { SEANCES, CORRESPONDANCES, CHECKS, FICHES, TRANSVERSALE, LEXIQUE, FLASHCARDS, QCM, QUESTIONS, METHODE, EXERCICES, SIMS, CAS, EXAMS };
+export { SEANCES, CORRESPONDANCES, FICHES, TRANSVERSALE, LEXIQUE, FLASHCARDS, QCM, QUESTIONS, METHODE, EXERCICES, SIMS, CAS, EXAMS };
 
 export const SE = Object.fromEntries(SEANCES.map((s) => [s.id, s]));
 export const TAGS = { s1: 'Séance 1', s2: 'Séance 2', s3: 'Séance 3', s4: 'Séance 4', cas: 'Cas MarketOne / TempoRun', x: 'Transversal' };
